@@ -1,0 +1,110 @@
+/* Variables para colores y tamaños */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF5722;
+    --background-color: #f4f4f9;
+    --box-color: #FFD700;
+    --box-hover-color: #FFA500;
+    --text-color: #333;
+    --box-border: 2px solid #555;
+    --container-height: 400px;
+    --box-size: 100px;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--primary-color);
+}
+
+h2, h3 {
+    margin: 10px 20px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 2px solid var(--secondary-color);
+}
+
+section {
+    margin: 20px;
+}
+
+/* Contenedores flexibles */
+.flex-container {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* Contenedores específicos */
+.example-container {
+    width: 80%;
+    min-height: var(--container-height);
+    background-color: var(--background-color);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Cajas */
+.box {
+    width: var(--box-size);
+    height: var(--box-size);
+    margin: 10px;
+    background-color: var(--box-color);
+    border: var(--box-border);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: var(--box-hover-color);
+}
+
+.align-self {
+    align-self: flex-end;
+}
